@@ -1,0 +1,99 @@
+main{
+    text-align: center;
+}
+
+#content{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+#hero-message h1{
+    text-align: center;
+}
+
+#hero-message h4{
+    text-align: center;
+}
+
+.button-box{
+    text-align: center;
+}
+
+body {
+    background-color: #F9F9ED; 
+}
+
+#background {
+    height: 725px;
+    background-color: rgb(211, 186, 153);
+}
+
+nav a {
+    color: #F9F9ED;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #333333;
+}
+
+header {
+    background-color:#47A8BD;
+}
+
+.msg{
+    background-color: #47A8BD;
+    color: #F9F9ED;
+}
+
+.social{
+    background-color: rgb(211, 186, 153);
+}
+
+footer{
+    background-color: rgb(211, 186, 153);
+}
+
+.home-title{
+    color: #333333;
+}
+
+h4{
+    color: #333333;
+}
+
+.reservations{
+    color: #333333;
+    text-decoration: none;
+}
+
+.join{
+    color: #F9F9ED;
+    text-decoration: none;
+}
+
+.reservations:hover, .join:hover{
+    background-color: rgb(211, 186, 153);
+}
+
+footer h3{
+    color: #333333;
+}
+
+footer a{
+    color: #333333;
+    text-decoration: none;
+}
+
+footer a:hover{
+    background-color: #333333;
+    color: #F9F9ED;
+}
+
+footer h3 a:hover{
+    text-decoration: underline;
+}
+
+.card-icon {
+    width: 80px;
+}
