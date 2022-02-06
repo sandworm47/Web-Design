@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches|Nunito+Sans');
+
 main{
     text-align: center;
 }
@@ -5,6 +7,21 @@ main{
 #content{
     max-width: 1600px;
     margin: 0 auto;
+}
+
+
+h1, h2{
+    font-family: Staatliches, Impact, 'Arial Narrow Bold';
+    font-size: 30px;
+    color: #333333;
+}
+
+h2{
+    margin: 0;
+}
+
+.msg, h4, .button-box, p, .navigation{
+    font-family: Nunito Sans, Arial, Helvetica;
 }
 
 #hero-message h1{
@@ -21,6 +38,8 @@ main{
 
 body {
     background-color: #F9F9ED; 
+    margin: 0;
+    padding: 0;
 }
 
 #background {
@@ -31,6 +50,8 @@ body {
 nav a {
     color: #F9F9ED;
     text-decoration: none;
+    text-align: center;
+    padding: 35px;
 }
 
 nav a:hover {
@@ -44,6 +65,8 @@ header {
 .msg{
     background-color: #47A8BD;
     color: #F9F9ED;
+    padding: 35px;
+    
 }
 
 .social{
@@ -52,10 +75,13 @@ header {
 
 footer{
     background-color: rgb(211, 186, 153);
+    padding: 25px 50px;
+    margin-top: 200px;  
 }
 
 .home-title{
     color: #333333;
+    margin-top: 10px;
 }
 
 h4{
@@ -65,11 +91,19 @@ h4{
 .reservations{
     color: #333333;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 50px;
 }
 
 .join{
     color: #F9F9ED;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 50px;
 }
 
 .reservations:hover, .join:hover{
@@ -96,9 +130,32 @@ footer h3 a:hover{
 
 .card-icon {
     width: 80px;
+    padding-top: 10px;
 }
 
 #logo-pic{
     width: 80px;
     height: 80px;
+    padding-top: 5px;
+}
+
+.msg p {
+    padding-top: 15px;
+    line-height: 1.5em;
+}
+
+footer .social img{
+    padding-top: 15px;
+}
+
+.card-img{
+    border: 10px solid rgb(211, 186, 153);
+}
+
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+
+main section img {
+    box-sizing: border-box;
 }
