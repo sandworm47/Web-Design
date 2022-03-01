@@ -280,3 +280,13 @@ main section img {
         margin-top: 25px;
     }
 }
+
+
+#page2-hero{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#hero-message{
+    text-align: center;
+}
