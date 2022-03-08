@@ -25,4 +25,6 @@ body{
 nav a:hover{
     background-color: #333333;
     color: ivory;
+    padding: 5px 5px;
+    border-radius: 10px;
 }
