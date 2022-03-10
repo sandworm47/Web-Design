@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Rapids</title>
+    <link type="text/css" rel="stylesheet" href="styles/style.css" />
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        form{
+            max-width: 40rem;
+        }
+
+        form label, 
+        form input,
+        form textarea,
+        form button {
+            display: block;
+            width: 20rem;
+            margin: 0;
+            padding: 0.75rem;
+        }
+
+        form input,
+        form textarea{
+            margin-bottom: 2rem;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <a href="index.html">
+                <img id="logo-pic" src="images/pixomatic_1642103494544.png" alt="Logo image" >
+            </a>
+            <nav class="navigation">
+                <a href="index.html">Home</a> 
+                <a href="about-rapids.html">About Rapids</a>
+                <a href="site-plan-rafting.html">Site Plan</a>
+                <a href="contactus.html">Contact Us</a>
+            </nav>
+        </header>
+    </div>
+    
+    <main>
+        <h1>Contact Us</h1>
+        <div id="feedback"></div>
+        <form action="response.html">
+            <label class="name" for="f-name">Name</label>
+            <input type="text" name="user_name" id="name" placeholder="John" autofocus>
+
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="user_email">
+
+            <label for="msg">Questions and Concerns</label>
+            <textarea name="msg" id="user_message" placeholder="Your comment..."></textarea>
+
+            <button type="submit">submit</button>
+        </form>
+    </main>
+
+    <footer>    
+        <h3>Wicked Water Rafting &copy; 2022 - Owen Cleland</h3>
+        <h3><a href="site-plan-rafting.html" target="_blank">Site Plan</a></h3>
+        <h3><a href="contactus.html" target="_blank">Contact Us</a></h3>
+        <div class="social-image" >
+
+            <a href="https://reddit.com" target="_blank">
+            <img src="images/redditlogo.png" alt="Reddit logo"> 
+            </a>
+
+            <a href="https://www.4chan.org" target="_blank"> 
+                <img src="images/4chan-Emblem.png" alt="4 chan logo">
+            </a>
+
+            <a href="https://twitch.tv" target="_blank">
+                <img src="images/twitch.png" alt="twitch logo">
+            </a>
+
+            <a href="https://www.krispykreme.com" target="_blank">
+                <img src="images/krispy-kreme-logo.png" alt="krispy kreme logo">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+    </script>
+
+</body>
+</html>
