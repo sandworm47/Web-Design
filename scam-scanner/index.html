@@ -4,43 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="styles/scam-scanner.css">
     <title>Home Page</title>
 </head>
 <header>
     <nav>
-        <img src="images/Owen Amazon LogoFinal.png" alt="Logo">
-    
         <a href="index.html">Home Page</a>
         <a href="search-page.html">Finder</a>
         <a href="contactus.html">Contact Us</a>
     </nav>
 </header>
-<body>
-    <main>
-        <h1>Scam Scanner</h1>
-        <h3>The best in the business</h3>
-        <section id="directions">
-            <h2>Step 1</h2>
-            <p>Go to Amazon, and find the serial code</p>
-            <h2>Step 2</h2>
-            <p>Copy and paste the serial code into our search bar, and select what kind of serial code it is.</p>
-            <h2>Step 3</h2>
-            <p>Hit search and view the results!</p>
-        </section>
-        <div>
-            <a href="search-page.html">
-                <img src="images/Search-Magnifying-Glass-clipart.png" alt="link to search">
-            </a>
-        </div>
-        <div id="site-description">
-            <h2>How does it work?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, aliquam atque fuga dignissimos quidem ex consectetur maiores repudiandae voluptatum, iure, cupiditate assumenda culpa dolores sit ab nam iste quisquam. Laboriosam!</p>
-        </div>
-    </main>
 
-    <footer>
-        <h3>Scam Scanner &copy; 2022 - Owen Cleland</h3>
-        <h3><a href="site-plan.html" target="_blank">Site Plan</a></h3>
-    </footer>
+<body>
+    <div id="content">
+
+        <main id="index-page">
+
+            <div id="hero">
+                <h1>Scam Scanner</h1>
+                <h3>The best in the business</h3>
+            </div>
+
+            <img class="logo" src="images/Owen Amazon LogoFinal.png" alt="Logo">
+
+            <section class="step-1-card">
+                <h2 class="step1">Step 1</h2>
+                <p class="step1">Go to Amazon, and find one of the 3 serial codes</p>
+                <img id="serial-example" src="images/serial example.png" alt="example">
+            </section>
+
+            <section class="step-2-card">
+                <h2 class="step2">Step 2</h2>
+                <p class="step2">Copy the serial code and paste it into our search bar on our <a id="hotlink" href="/scam-scanner/search-page.html">Finder</a> page, and select what kind of serial code it is. ASIN, UPC, or model number.</p>
+            </section>
+
+            <section class="step-3-card">
+                <h2 class="step3">Step 3</h2>
+                <p class="step3">Hit search and view the results!</p>
+            </section>
+
+            <div id="search-link">
+                <a href="search-page.html">
+                    <img id="magnifying-glass" src="images/Search-Magnifying-Glass-clipart.png" alt="link to search">
+                </a>
+                <p>Begin search!</p>
+            </div>
+
+            <div id="site-description">
+                <h2>How does it work?</h2>
+                <p>Every item sold on Amazon has at least 3 identifying serial numbers. Amazon uses these serial codes to track no only the exact product, but that product line.
+                    By using Amazon's shared database, we see what Amazon sees. Through these serial numbers, Amazon's database knows where it came from, and because of the product type, who it came from. 
+                    Thankfully for us, Amazon has already done all the work, we are just sifting through the fruit of thier labors. Big preesh Jeff.
+                </p>
+            </div>
+
+        </main>
+
+        <footer>
+            <h3>Scam Scanner &copy; 2022 - Owen Cleland</h3>
+            <h3><a href="site-plan.html" target="_blank">Site Plan</a></h3>
+        </footer>
+    </div>
 </body>
 </html>

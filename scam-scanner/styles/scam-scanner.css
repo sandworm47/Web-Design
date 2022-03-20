@@ -1,10 +1,142 @@
-.dropdown:hover .dropdown-content {
-    display: block;}
+@import url('https://fonts.googleapis.com/css?family=Prompt|Overpass');
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;}
+
+main{
+    text-align: center;
+}
+
+h1, h2, h3{
+    font-family: Prompt;
+}
+
+p{
+    font-family: Overpass;
+}
+
+#content{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #93A8AC;
+}
+
+#index-page{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+}
+
+nav{
+    padding: 50px;
+    background-color: #ff9900;
+    font-family: Prompt;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 35px;
+    color: white;
+}
+
+nav a:hover{
+    background-color: #001F54;
+    color: #ff9900;
+    border-radius: 10px;
+}
+
+
+#directions{
+    grid-column: 1/11;
+    grid-row: 2/3;
+    margin: 0 auto;
+}
+
+#magnifying-glass{
+    width: 50%;
+    transition: transform 1s;
+}
+
+#hero{
+    grid-column: 6/8;
+    grid-row: 1/2;
+    margin: auto;
+}
+
+.logo{
+    grid-column: 4/6;
+    grid-row: 1/2;
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#search-link{
+    grid-column: 5/7;
+    grid-row: 3/4;
+    margin-top: 20px;
+    color: white;
+}
+
+#site-description{
+    color: white;
+    grid-column: 4/8;
+    background-color: #001F54;
+    border-radius: 40px;
+    margin-bottom: 10px;
+}
+
+.step-1-card{
+    grid-column: 1/4;
+    grid-row: 2/3;
+    
+}
+
+.step-2-card{
+    grid-column: 4/8;
+}
+
+.step-3-card{
+    grid-column: 8/11;
+}
+
+#serial-example{
+    width: 100%;
+}
+
+.step1:nth-child(2), .step2:nth-child(2), .step3:nth-child(2){
+    color: white;
+}
+
+.step1:nth-child(1), .step2:nth-child(1), .step3:nth-child(1){
+    color: #001F54;
+}
+
+footer{
+    background-color: #ff9900;
+    padding: 5px;
+}
+
+footer a{
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+}
+
+footer a:hover{
+    background-color: #001F54;
+    color: #ff9900;
+    border-radius: 10px;
+}
+
+#search-link:hover{
+    opacity: .6;
+    transform: scale(1.1);
+}
+
+#hotlink{
+    color: #001F54;
+    text-decoration: none;
+}
