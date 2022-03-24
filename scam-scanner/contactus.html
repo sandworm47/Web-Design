@@ -7,6 +7,51 @@
     <link type="text/css" rel="stylesheet" href="styles/scam-scanner.css">
     <title>Contact Us</title>
 </head>
+<style>
+    .container {
+      position: relative;
+      width: 35%;
+      height: auto;
+    }
+    
+    .image {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+    
+    .middle {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    
+    .container:hover .image {
+      opacity: 0.3;
+    }
+    
+    .container:hover .middle {
+      opacity: 1;
+    }
+    
+    .text {
+      background-color: #001F54;
+      color: white;
+      font-size: 16px;
+      padding: 16px 32px;
+    }
+    </style>
+
+
+
 <header>
     <nav>
         <img src="images/Owen Amazon LogoFinal.png" alt="Logo">
@@ -24,11 +69,19 @@
         </div>
         <div id="about">
             <h2>Our Founder</h2>
-            <img src="images/this-person-doesnt-exsits.jpg" alt="portrait photo">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, commodi beatae. Porro voluptate possimus, eveniet asperiores rem iste, maiores ut nulla reiciendis nihil, voluptas consectetur soluta dignissimos dolores ipsum perferendis.</p>
+            <div class="container">
+                <img src="images/this-person-doesnt-exsits.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sed et, necessitatibus excepturi esse omnis enim facilis, ea dolorum sit distinctio tenetur in soluta sint iure velit, exercitationem illum aperiam?</div>
+                </div>
+              </div>
             <h2>Our Leader</h2>
-            <img src="images/portrait-defaut.jpg" alt="portrait photo">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ab, illum voluptas placeat pariatur dolore? Exercitationem, esse, temporibus ea quibusdam animi inventore corporis molestias autem qui ratione libero quas maxime?</p>
+            <div class="container">
+                <img src="images/portrait-defaut.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                  <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident tempore animi accusamus impedit temporibus repellat magnam? Id asperiores nulla velit, aspernatur perferendis culpa inventore atque esse fugiat libero labore nemo?</div>
+                </div>
+              </div>
         </div>
     </main>
     <form action="thankyou.html">
