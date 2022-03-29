@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="styles/scam-scanner.css">
+    <link type="text/css" rel="stylesheet" href="styles/styles.css"/>
     <title>Finder</title>
 </head>
-<header>
-    <nav>
-        <img src="images/Owen Amazon LogoFinal.png" alt="Logo">
-    
-        <a href="index.html">Home Page</a>
-        <a href="search-page.html">Finder</a>
-        <a href="contactus.html">Contact Us</a>
-    </nav>
-</header>
+
 <body>
+    <header>
+        <nav>
+            <img src="images/Owen-Amazon-LogoFinal.png" alt="Logo">
+        
+            <a href="index.html">Home Page</a>
+            <a href="search-page.html">Finder</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+    </header>
     <main>
-        <input type="text" name="search-bar" id="search-bar" placeholder="Paste serial code here...">
+        <input type="text" name="search-bar" id="search-bar" placeholder="Paste serial code here..." autofocus>
 
         <select name="serial-id" id="serial-id">
             <option value="none">Serial number type</option>
@@ -27,14 +28,40 @@
             <option value="Item model number">Item Model Number</option>
 
         </select>
-        <button>Search</button>
+        <button id="search-button">Search</button>
 
-        <h2>Step 1</h2>
+        <div id="step-1">
+            <h2>Step 1</h2>
             <p>Go to Amazon, and find the serial code</p>
+        </div>
+
+        <div id="step-2">
             <h2>Step 2</h2>
             <p>Copy and paste the serial code into our search bar, and select what kind of serial code it is.</p>
+        </div>
+
+        <div id="step-3">
             <h2>Step 3</h2>
             <p>Hit search and view the results!</p>
+        </div>
+            
+
+        <div id="source">
+            <h1>Source</h1>
+            <img id="source-img" src="images/map-pakistan-pin-country-capital-footage-151820480_iconl.webp" alt="source">    
+        </div>
+        
+        <div id="vendor">
+            <h1>Vendor</h1>
+            <img id="vendor-img" src="images/arabic-teenager-260nw-247013335.jpg" alt="vendor">
+        </div>
+
+        <div id="authenticity">
+            <h1>Authenticity</h1>
+            <img id="status" src="images/1024px-Red_X.svg.png" alt="x">
+        </div>
+        
+        
     </main>
     <footer>
         <h3>Scam Scanner &copy; 2022 - Owen Cleland</h3>
