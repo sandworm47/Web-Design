@@ -202,14 +202,20 @@ footer a:hover{
 #source{
     grid-column: 2/4;
     grid-row: 4/5;
+    color: #001F54;
+    text-decoration: underline;
 }
 
 #vendor{
     grid-column: 5/7;
+    color: #001F54;
+    text-decoration: underline;
 }
 
 #authenticity{
     grid-column: 8/10;
+    color: #001F54;
+    text-decoration: underline;
 }
 
 #status{
