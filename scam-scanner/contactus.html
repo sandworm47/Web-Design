@@ -4,97 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="styles/scam-scanner.css">
+    <link type="text/css" rel="stylesheet" href="styles/styles.css">
     <title>Contact Us</title>
 </head>
-<style>
-    .container {
-      position: relative;
-      width: 35%;
-      height: auto;
-    }
-    
-    .image {
-      opacity: 1;
-      display: block;
-      width: 100%;
-      height: auto;
-      transition: .5s ease;
-      backface-visibility: hidden;
-    }
-    
-    .middle {
-      transition: .5s ease;
-      opacity: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      text-align: center;
-    }
-    
-    .container:hover .image {
-      opacity: 0.3;
-    }
-    
-    .container:hover .middle {
-      opacity: 1;
-    }
-    
-    .text {
-      background-color: #001F54;
-      color: white;
-      font-size: 16px;
-      padding: 16px 32px;
-    }
-    </style>
-
-
 
 <header>
     <nav>
-        <img src="images/Owen Amazon LogoFinal.png" alt="Logo">
+        <img src="images/Owen-Amazon-LogoFinal.png" alt="Logo">
     
         <a href="index.html">Home Page</a>
         <a href="search-page.html">Finder</a>
         <a href="contactus.html">Contact Us</a>
     </nav>
 </header>
+
 <body>
-    <main>
-        <div id="hero">
-            <h1>Meet the team!</h1>
-            <img src="images/shutterstock_737994433.jpg" alt="Team photo">
-        </div>
-        <div id="about">
+    <main id="main-3">
+        <h1>MEET THE TEAM!</h1>
+        <h3><em>"For every dollar spent on the internet, 40 cents of that was on Amazon.com. Think of all of those people that could potentially be cheated by scammers. Those who can protect must step up."</em> <u> -Edward Corben, CEO</u></h3>
+        <img id="hero-img" src="images/shutterstock_737994433.jpg" alt="Team photo">
+        
+
+        <div class="founder">
             <h2>Our Founder</h2>
-            <div class="container">
-                <img src="images/this-person-doesnt-exsits.jpg" alt="Avatar" class="image" style="width:100%">
-                <div class="middle">
-                  <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sed et, necessitatibus excepturi esse omnis enim facilis, ea dolorum sit distinctio tenetur in soluta sint iure velit, exercitationem illum aperiam?</div>
-                </div>
-              </div>
-            <h2>Our Leader</h2>
-            <div class="container">
-                <img src="images/portrait-defaut.jpg" alt="Avatar" class="image" style="width:100%">
-                <div class="middle">
-                  <div class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident tempore animi accusamus impedit temporibus repellat magnam? Id asperiores nulla velit, aspernatur perferendis culpa inventore atque esse fugiat libero labore nemo?</div>
-                </div>
-              </div>
+            <img id="founder-img" src="images/this-person-doesnt-exsits.jpg" alt="Avatar" style="width: 100%;">
+            <p>Henry Malcomb has always been a hard worker and at the forfront of innovation. His vison of a safer online world gave him the idea to create the website that you now know as Scam Scanner. What started as a dream and a few friends in the computer lab after school, has turned into the most sucsessful online shopping companion.</p>
         </div>
-    </main>
-    <form action="thankyou.html">
+             
+        <div class="leader">
+            <h2>Our Leader</h2>
+            <img id="leader-img" src="images/portrait-defaut.jpg" alt="Avatar" style="width:100%">
+            <p> Edward Corben was instrumental in the development of Scam Scanner, and after Henry Malcomb stepped down as CEO, Corben assumed the postion. Mr. Corben much like Mr. Malcomb is a hard and dedicated worker with a passion to make the online wilderness a safer and better place. </p>
+        </div>
+
+        </main>
+
+    <form action="thankyou.html" id="form">
         <label for="f-name">First Name</label>
-        <input type="text" id="f-name" name="f-name" placeholder="Jon" autofocus>
+        <input type="text" id="f-name" name="f-name" placeholder="Jon">
 
         <label for="l-name">Last Name</label>
         <input type="text" id="l-name" name="l-name" placeholder="Doe">
 
         <label for="comment">Questions or concerns</label>
         <textarea name="comment" id="comment" placeholder="Your comment here..."></textarea>
-        <button type="submit">Send comment</button>
+        <button id="submit-button" type="submit">Send comment</button>
     </form>
+
     <footer>
         <h3>Scam Scanner &copy; 2022 - Owen Cleland</h3>
         <h3><a href="site-plan.html" target="_blank">Site Plan</a></h3>
